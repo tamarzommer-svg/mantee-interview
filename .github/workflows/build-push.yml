@@ -30,6 +30,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::030454160336:role/exam-github-action
           aws-region: eu-west-2
+          retry-max-attempts: 1
 
       # Log Docker in to ECR; exposes the registry URL as an output
       - name: Login to ECR
